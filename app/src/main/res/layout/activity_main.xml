@@ -1,0 +1,103 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     tools:context=".MainActivity">
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="204dp"
+         android:layout_height="wrap_content"
+         android:text="Введите возраст:"
+         tools:layout_editor_absoluteX="1dp"
+         tools:layout_editor_absoluteY="165dp" />
+
+     <TextView
+         android:id="@+id/textView"
+         android:layout_width="204dp"
+         android:layout_height="wrap_content"
+         android:text="Введите имя:"
+         tools:layout_editor_absoluteX="1dp"
+         tools:layout_editor_absoluteY="81dp" />
+
+     <EditText
+         android:id="@+id/editTextPersonName"
+         android:layout_width="204dp"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         android:hint="Введите ваше имя"
+         android:inputType="textPersonName"
+         tools:layout_editor_absoluteX="206dp"
+         tools:layout_editor_absoluteY="70dp" />
+
+     <EditText
+         android:id="@+id/editPersonAge"
+         android:layout_width="204dp"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         android:hint="Введите ваш возраст"
+         android:inputType="numberDecimal"
+         tools:layout_editor_absoluteX="206dp"
+         tools:layout_editor_absoluteY="148dp" />
+
+     <TextView
+         android:id="@+id/textView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Выберите пол"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.5"
+         app:layout_constraintStart_toStartOf="parent"
+         tools:layout_editor_absoluteY="232dp" />
+
+    <RadioGroup
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender_radio_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/radioButton2"
+        tools:layout_editor_absoluteY="275dp"
+        tools:ignore="NotSibling">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:text="жен"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/radioButton"
+            tools:layout_editor_absoluteY="274dp" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отправить"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сбросить"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:text="муж"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
